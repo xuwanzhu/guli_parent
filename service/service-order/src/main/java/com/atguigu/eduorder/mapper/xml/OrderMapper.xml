@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atguigu.eduorder.mapper.OrderMapper">
+
+<!--更新course表的购买量数据-->
+<update id="updateCourseBuy" keyColumn="buy_count">
+    update edu_course set buy_count = buy_count +1 where edu_course.id = #{courseId}
+</update>
+
+
+</mapper>
